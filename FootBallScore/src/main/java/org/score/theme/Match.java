@@ -9,7 +9,7 @@ public interface Match {
 
     public void updateMatch(int matchID,int homeScore, int AwayScore);
 
-    public ScoreBoard finishMatch(int matchID,boolean status);
+    public void finishMatch(int matchID,boolean status);
 
     public List<ScoreBoard> boardSummary(List<ScoreBoard> matches);
 }
