@@ -11,8 +11,9 @@ class ScoreBoardTest {
 
     @BeforeEach
     void setUp() {
-        var team = new Team("Brazil",2);
-        score = new ScoreBoard(team,false,1);
+        var homeTeam = new Team("Brazil");
+        var awayTeam = new Team("France");
+        score = new ScoreBoard(homeTeam,awayTeam,2,3, false, 1);
     }
 
     @AfterEach
@@ -23,8 +24,7 @@ class ScoreBoardTest {
     @Test
     void testToString() {
         System.out.println(score);
-        System.out.println(score.team);
         assertFalse(score.gameStatus);
-        assertEquals(score.team.name,"Brazil");
+        assertEquals(score.homeTeam.name, "Brazil");
     }
 }
