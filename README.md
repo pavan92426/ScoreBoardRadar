@@ -24,3 +24,4 @@ A score board that supports following operations
 6. Team{name='Argentina'}3-Team{name='Australia'}1 - 4
 7. Team{name='Germany'}2-Team{name='France'}2 - 5
 8. Exiting board summary
+9. 
