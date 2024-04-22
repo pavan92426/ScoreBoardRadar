@@ -15,6 +15,14 @@ public class ScoreBoard {
         this.gameID = gameID;
     }
 
+    public Team getHomeTeam() {
+        return homeTeam;
+    }
+
+    public Team getAwayTeam() {
+        return awayTeam;
+    }
+
     public int getHomeScore() {
         return homeScore;
     }
@@ -41,6 +49,10 @@ public class ScoreBoard {
 
     public void setGameStatus(boolean gameStatus) {
         this.gameStatus = gameStatus;
+    }
+
+    public int getTotalScore() {
+        return this.getHomeScore() + this.getAwayScore();
     }
 
     @Override
